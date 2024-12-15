@@ -1,0 +1,34 @@
+// InputField.scss
+
+.input-field {
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+  max-width: 100%;
+  
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  
+    &:focus {
+      border-color: #007bff; // Matches the primary color
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+  
+    &.error {
+      border-color: #dc3545;
+    }
+  
+    &::placeholder {
+      color: #aaa;
+      font-size: 14px;
+    }
+    *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+  }
+  
